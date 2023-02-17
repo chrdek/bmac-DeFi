@@ -1,4 +1,4 @@
-import abi from '../utils/BuyMeACoffee.json';
+import abi from './utils/BuyMeACoffee.json';
 import { ethers } from "ethers";
 import Head from 'next/head'
 import React, { useEffect, useState } from "react";
