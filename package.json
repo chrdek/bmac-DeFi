@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-"vercel-build": "npm run prepare && next build"
+"vercel-build": "npm run prepare && next build",
 "prepare": "npm run build",
   },
   "dependencies": {
