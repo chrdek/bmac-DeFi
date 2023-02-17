@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
 "vercel-build": "npm run prepare && next build"
+"prepare": "npm run build",
   },
   "dependencies": {
     "ethers": "^5.6.5",
