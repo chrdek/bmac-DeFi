@@ -172,11 +172,26 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+<div id="wrap">
+      <div id="steam" className="steam-one"></div>
+      <div id="steam" className="steam-two"></div>
+      <div id="steam" className="steam-three"></div>
+      <div id="steam" className="steam-four"></div>
+
+      <div id="cup">
+            <div className="cup-body">
+                  <div className="cup-shade"></div>                        
+            </div>
+            <div className="cup-handle"></div>
+            <div className="saurce"></div>
+      </div>
+</div>
+<br/>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Send me a DeFi coffee..
+        <h1 className={`intro`}>
+          Send me a coffee..
         </h1>
-        
+
         {currentAccount ? (
           <div>
             <form>
@@ -220,7 +235,8 @@ export default function Home() {
             </form>
           </div>
         ) : (
-          <button onClick={connectWallet}> Connect your wallet </button>
+
+          <button className={`sheen`} onClick={connectWallet}>🦊&nbsp;&nbsp;Connect with Metamask</button>
         )}
       </main>
 
@@ -240,8 +256,9 @@ export default function Home() {
           href="https://alchemy.com/?a=roadtoweb3weektwo"
           target="_blank"
           rel="noopener noreferrer"
+	  className={`intro`}
         >
-Thanks for funding me current & future projects (supported by web 3.0)
+Thanks for funding current -and future- projects (supported by web 3.0)
         </a>
       </footer>
     </div>

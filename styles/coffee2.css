@@ -1,67 +1,17 @@
-html,
 body {
       width: 100%;
       height: 100vh;
       overflow: hidden;
-  padding: 0;
-  margin: 0;
-background: #3f4249;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-/*
-*{
-  margin:0;
-  padding:0;
-  text-align:center;
-  box-sizing: border-box;
-}*/
-button{
-  position:relative;
-  overflow:hidden;
-  margin-top:80px;
-  padding:20px 60px;
-  font-weight:900;
-  font-size:0.9em;
-  border-radius:5px;
-  border:0;
-  color:#C66C6C;
-  box-shadow:-2px 4px 4px #ccc;
-  background-color:#EECCA1;
-}
-
-/** general layout **/
-.intro{
-  width: 100%;
-  margin: 0 auto; 
-  font-family: 'Asap', sans-serif;
-  text-align: center; 
-  color: #2f3238; 
-  text-shadow: 0px 1px 1px #4e525a;
-}
-.intro h1{
-   font-size: 5em; 
-}
-
-a.intro {
-font-size:1.4em;
-font-weight:300;
-}
-/** general layout end **/
-
-
-/***Coffee cup start***/
+      margin: 0;
+      padding: 0%;
+      background-color: black;
+ }
 #wrap {
-      position: fixed;
-      /*  top: 55%;*/
+      position: absolute;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
-      /*width: 300px;*/
+      width: 300px;
 }
 #steam {
       position: absolute;
@@ -147,40 +97,3 @@ font-weight:300;
       background-color: white;
       z-index: 2;
 } 
-/***Coffee cup end***/
-
-
-/*        sheen effect      */
-/*This is the base aniamtion*/
-.sheen:after{
-  content: '';
-  position: absolute;
-  top: -70%;
-  right: -70%;
-  bottom: -70%;
-  left: -70%;
-  background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
-  transform: rotateZ(60deg) translate(-5em, 90.5em);
-}
-/*This activates the sheen once the button has been hovered*/
-.sheen:hover::after, button:focus::after {
-  animation: sheen 1s forwards;
-}
-@keyframes sheen {
-  100% {
-    transform: rotateZ(60deg) translate(1em, -9em);
-  }
-}
-
-button:active{
-  box-shadow:0px 0px 0px white;
-  -webkit-box-shadow: inset -2px 2px 2px #ccc;
-  -moz-box-shadow:    inset -2px 2px 2px #ccc;
-  box-shadow:         inset -2px 2px 2px #ccc;
-  transform:translate(0, 2px);
-  color:#FFC491;
-  background-color:#EDE358;
-}
-button:focus{
-  outline:0;
-}
