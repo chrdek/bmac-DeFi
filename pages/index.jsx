@@ -167,7 +167,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Buy Albert a Coffee!</title>
+        <title>Buy Me a Coffee!</title>
         <meta name="description" content="Tipping site" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -180,7 +180,7 @@ export default function Home() {
         {currentAccount ? (
           <div>
             <form>
-              <div class="formgroup">
+              <div className={`formgroup`}>
                 <label>
                   Name
                 </label>
@@ -194,7 +194,7 @@ export default function Home() {
                   />
               </div>
               <br/>
-              <div class="formgroup">
+              <div className={`formgroup`}>
                 <label>
                   Send me a DeFi coffee..
                 </label>
