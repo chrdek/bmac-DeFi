@@ -78,7 +78,7 @@ export default function Home() {
         const coffeeTxn = await buyMeACoffee.buyCoffee(
           name ? name : "anon",
           message ? message : "Enjoy your coffee!",
-          {value: ethers.utils.parseEther("0.0001")}
+          {value: ethers.utils.parseEther("0.0032")}
         );
 
         await coffeeTxn.wait();
@@ -193,7 +193,7 @@ export default function Home() {
         </h1>
 
         {currentAccount ? (
-          <div>
+          <div style={{marginTop:`30%`}}>
             <form>
               <div className={`formgroup`}>
                 <label>
@@ -217,7 +217,7 @@ export default function Home() {
 
                 <textarea
                   rows={5}
-                  placeholder="Enjoy your coffee! /Send me a direct message on my discord channel @ ... "
+                  placeholder="Enjoy your coffee! /Direct messages on my discord channel @ discord.gg/g2ybZRJmUQ"
                   id="message"
                   onChange={onMessageChange}
                   required
@@ -229,7 +229,7 @@ export default function Home() {
                   type="button"
                   onClick={buyCoffee}
                 >
-                  Send 1 Coffee for 0.0001ETH
+                  1 Coffee/0.0032ETH
                 </button>
               </div>
             </form>
@@ -253,7 +253,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://alchemy.com/?a=roadtoweb3weektwo"
+          href="https://github.com/chrdek/bmac-DeFi"
           target="_blank"
           rel="noopener noreferrer"
 	  className={`intro`}
