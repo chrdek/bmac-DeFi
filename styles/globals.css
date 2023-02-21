@@ -159,7 +159,7 @@ font-weight:300;
 
 
 /*        sheen effect      */
-/*This is the base aniamtion*/
+/*This is the base animation*/
 .sheen:after{
   content: '';
   position: absolute;
