@@ -1,6 +1,12 @@
 # Simple DeFi  Buy a Coffee App
 
 Buy me a coffee application based on web3.0 blockchain technology (Goerli testnet).
+<br/>
+<br/>
+
+![VercelApp Deployment Status](https://img.shields.io/github/deployments/chrdek/bmac-DeFi/production?label=vercel&logo=vercel&logoColor=white)
+<br/>
+<br/>
 
 This DeFi App enables users to send small funding amount via their metamask wallet.
 
@@ -11,7 +17,9 @@ __NOTE: This is an application for demonstration purposes only, you can only sen
 <br/>
 
 [OPTIONAL] - test suites can be run via :
+
 ```shell
 npm run test
 ```
+
 These need to be configured from local dev environment end.
