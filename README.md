@@ -12,7 +12,8 @@ This DeFi App enables users to send small funding amount via their metamask wall
 
 Online web sample can be found [here.](https://bmac-de-fi.vercel.app/)
 
-__NOTE: This is an application for demonstration purposes only, you can only send GoerliETH__
+__NOTE: This is an application for demonstration purposes only, you can only send GoerliETH__ 
+__UPDATE for web3: GoerliETH LTS No longer applicable for Ethereum__ [Official source](https://github.com/eth-clients/goerli)
 
 <br/>
 
